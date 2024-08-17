@@ -1,0 +1,112 @@
+.image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.yasoob-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+.yasoob-image img {
+    width: 200px; 
+    height: 200px; 
+    clip-path: circle(50%); 
+    object-fit: cover; 
+}
+
+.developer-info{
+    text-align: center;
+    margin-top:20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.developer-info p{
+    color:deepskyblue;
+}
+
+.developer-info hr {
+    width: 50%; 
+    border: 1px solid #282424; 
+    margin: 10px auto; 
+}
+
+.developer-project{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.developer-project p{
+    color:deepskyblue;
+}
+
+.project-item {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 25px; 
+}
+
+.project-item img {
+    width: 150px; 
+    height: auto;
+    margin-right: 20px; 
+}
+
+.project-text {
+    max-width: 600px; 
+    text-align: left; 
+}
+
+.developer-project hr {
+    width: 50%; 
+    border: 1px solid #282424; 
+    margin: 10px auto; 
+}
+
+.myphotos{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: deepskyblue;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
